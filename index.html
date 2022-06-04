@@ -188,18 +188,48 @@
                             <h4><a href="https://github.com/foxt451/sleep-tracker-pet">A mix of many small projects in
                                     Nodejs <i class="fa fa-external-link"></i>
                                 </a></h4>
-                            Ranging from manipulating data to writing backend for storing data and for auth and to CLI and
+                            Ranging from manipulating data to writing backend for storing data and for auth and to CLI
+                            and
                             telegram bots
                         </div>
                         <div class="pet__item">
-                            <h4><a href="https://github.com/foxt451/workout_buddy">Django app for finding workout partners <i class="fa fa-external-link"></i>
+                            <h4><a href="https://github.com/foxt451/workout_buddy">Django app for finding workout
+                                    partners <i class="fa fa-external-link"></i>
                                 </a></h4>
                         </div>
                         <div class="pet__item">
-                            <h4><a href="https://github.com/foxt451/diy_blog">Django blog <i class="fa fa-external-link"></i>
+                            <h4><a href="https://github.com/foxt451/diy_blog">Django blog <i
+                                        class="fa fa-external-link"></i>
                                 </a></h4>
                         </div>
                     </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="resume__block">
+                    <h4 class="random__header">Random fact about me (one is fake, you can figure out which one
+                        &#128521;):
+                    </h4>
+                    <button class="random__button">yep</button>
+                    <div class="random__fact"></div>
+                    <script>
+                        let curId = 0;
+                        const facts = [
+                            "I go climbing 2+ times a week",
+                            "I have 3 dogs",
+                            "I have eye heterochromia",
+                            "I love horror movies (and games)",
+                            "My first programming language was PHP"
+                        ];
+                        const random_button = document.querySelector(".random__button");
+                        const random_fact_span = document.querySelector(".random__fact");
+                        random_button.addEventListener('click', () => {
+                            random_fact_span.textContent = facts[curId];
+                            // haha, they actually are sequential, not random
+                            curId = (curId + 1) % facts.length
+                        });
+                    </script>
                 </div>
             </div>
         </div>

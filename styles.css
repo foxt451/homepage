@@ -90,7 +90,7 @@ body {
     display        : flex;
     flex           : 1 1 0px;
     flex-direction : column;
-    align-items: center;
+    align-items    : center;
     justify-content: space-between;
 }
 
@@ -102,7 +102,7 @@ body {
     color          : var(--secondary-text-color);
     text-decoration: none;
     display        : flex;
-    align-self: start;
+    align-self     : start;
     justify-content: end;
 }
 
@@ -177,14 +177,14 @@ body {
 }
 
 .pet__item {
-    margin: 10px;
+    margin         : 10px;
     color          : var(--secondary-text-color);
     text-decoration: none;
     align-self     : start;
 }
 
 .pet__item a {
-    color          : inherit;
+    color: rgb(152, 179, 255);
 }
 
 .skills__header {
@@ -201,6 +201,27 @@ body {
 .experiences {
     flex        : 1 1 60%;
     margin-right: 50px;
+}
+
+.random__header {
+    display: inline-block;
+    color  : var(--secondary-text-color);
+}
+
+.random__button {
+    padding         : 5px;
+    color           : var(--secondary-text-color);
+    background-color: rgb(61, 0, 63);
+    border          : none;
+    display         : inline-block;
+    font-size       : 16px;
+    display         : inline-block;
+    font-size       : 16px;
+    cursor          : pointer;
+}
+
+.random__fact {
+    color: var(--secondary-text-color);
 }
 
 .experiences__header {
